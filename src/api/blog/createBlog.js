@@ -8,7 +8,7 @@ const createBlog = async (req, res) => {
     const blogData = req.body;
     const blog = {
         ...blogData,
-        id: generator.uuid(),
+        Id: generator.uuid(),
     }
     const result = await blogs.create(blog)
     res.send(result)
