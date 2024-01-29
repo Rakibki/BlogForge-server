@@ -2,7 +2,7 @@ const { model, Schema } = require("mongoose");
 
 const blogSchema = new Schema({
   userId: {
-    type: Number,
+    type: String,
     // required: true,
   },
   id: {
@@ -14,6 +14,10 @@ const blogSchema = new Schema({
     // required: true,
   },
   body: {
+    type: String,
+    // required: true,
+  },
+  image: {
     type: String,
     // required: true,
   },
