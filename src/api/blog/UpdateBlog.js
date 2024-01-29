@@ -3,6 +3,7 @@ const blogs = require("../../models/blog");
 const updateBlog = async (req, res) => {
   const id = req.params.id;
   const idNmb = Number(id);
+  console.log(idNmb);
   const data = req.body;
   const result = await blogs.findOneAndUpdate(
     { Id: idNmb },

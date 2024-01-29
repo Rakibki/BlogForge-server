@@ -5,7 +5,7 @@ const blogSchema = new Schema({
     type: String,
     // required: true,
   },
-  id: {
+  Id: {
     type: Number,
     // required: true,
   },
